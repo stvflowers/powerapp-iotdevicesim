@@ -20,8 +20,8 @@ https://docs.microsoft.com/en-us/azure/iot-pnp/howto-use-iot-explorer
 
 $namespace = "" #IoT Hub
 $endpoint = "" #IoT Hub Device
-$SASpolicyName = "mySendPolicy" #IoT Hub SAS policy
-$SASpolicyKey = "CpOq5Dv+EKS5PxMbrJcj9p/ASNH+3+5BBTNrBwJVt54=" #IoT Hub SAS policy key
+$SASpolicyName = "" #IoT Hub SAS policy
+$SASpolicyKey = "" #IoT Hub SAS policy key
 $tokenExpiry = 300 #Token validity time in seconds
 
 
