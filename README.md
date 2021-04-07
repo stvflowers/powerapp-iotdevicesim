@@ -4,7 +4,9 @@ welcome to the IoT device simulator.
 
 to get started, enter the connection string from your IoT Hub device. it should be formatted like the below:
 
-HostName=<name>.azure-devices.net;DeviceId=<name>;SharedAccessKey=yourSecretKey
+HostName=<name>.azure-devices.net;DeviceId=<name>;SharedAccessKeyName=SASpolicyName;SharedAccessKey=SASpolicyKey
+
+DO NOT forget to add SAS policy name!
 
 Generate a SAS token. it should look like the below:
 
@@ -13,13 +15,14 @@ SharedAccessSignature sr=<name>.azure-devices.net&sig=<secret>&skn=<SAP>
 If you are unsure how to generate a SAS token, you can use the IoT Device Explorer or you can use Powershell.
 https://docs.microsoft.com/en-us/azure/iot-pnp/howto-use-iot-explorer
 
+
 ```powershell
 ######
 ## Edit the variables to match your information
 ##
 
 $namespace = "" #IoT Hub
-$endpoint = "" #IoT Hub Device
+$endpoint = "" #IoT Hub Device connection string. Must include SAS policy name and key
 $SASpolicyName = "" #IoT Hub SAS policy
 $SASpolicyKey = "" #IoT Hub SAS policy key
 $tokenExpiry = 300 #Token validity time in seconds
