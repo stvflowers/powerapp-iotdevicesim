@@ -10,7 +10,7 @@ DO NOT forget to add SAS policy name!
 
 Generate a SAS token. it should look like the below:
 
-SharedAccessSignature sr=<name>.azure-devices.net&sig=<secret>&skn=<SAP>
+SharedAccessSignature sr=yourhubnamehere.azure-devices.net&sig=asecretsignature&skn=yoursharedaccesspolicyname
 
 If you are unsure how to generate a SAS token, you can use the IoT Device Explorer or you can use Powershell.
 https://docs.microsoft.com/en-us/azure/iot-pnp/howto-use-iot-explorer
