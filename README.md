@@ -4,9 +4,7 @@ welcome to the IoT device simulator.
 
 to get started, enter the connection string from your IoT Hub device. it should be formatted like the below:
 
-HostName=<name>.azure-devices.net;DeviceId=<name>;SharedAccessKeyName=SASpolicyName;SharedAccessKey=SASpolicyKey
-
-DO NOT forget to add SAS policy name!
+HostName=yourhubname.azure-devices.net;DeviceId=yourdevicename;SharedAccessKey=yourdevicesharedkey
 
 Generate a SAS token. it should look like the below:
 
